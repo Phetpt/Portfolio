@@ -23,11 +23,7 @@ export interface CaseStudy {
   architectureDetails: string[];
   tradeoffs: { choice: string; why: string; alternativeRejected: string }[];
   keyOutcomes: string[];
-  codeHighlight?: {
-    filename: string;
-    language: string;
-    code: string;
-  };
+
   liveUrl?: string;
   githubUrl?: string;
   featured?: boolean;
@@ -35,9 +31,8 @@ export interface CaseStudy {
 
 export interface ADR {
   id: string;
+  projectId: string,
   title: string;
-  status: 'Accepted' | 'Implemented' | 'Superseded';
-  date: string;
   context: string;
   decision: string;
   consequencesPositive: string[];
@@ -60,15 +55,12 @@ export interface ExperienceItem {
 export interface SkillCategory {
   category: string;
   description: string;
-  skills: { name: string; level: 'Expert' | 'Advanced' | 'Proficient'; context: string }[];
+  skills: string[];
 }
-
-export type CustomIconType = 'solidity' | 'nextjs' | 'prisma' | 'vercel';
 
 export interface TechSkill {
   name: string;
   icon?: string;
-  iconType?: CustomIconType;
 }
 
 export interface TechCategory {
