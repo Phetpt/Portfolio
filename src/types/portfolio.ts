@@ -1,4 +1,4 @@
-export type MetricIconType = 'Activity' | 'Zap' | 'ShieldCheck' | 'TrendingUp' ;
+export type MetricIconType = 'Activity' | 'Zap' | 'ShieldCheck' | 'TrendingUp' | 'Network' | 'Users' | 'Layers' ;
 
 export interface ImpactMetric {
   id: string;
