@@ -17,7 +17,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    // เปิดตรวจ type เข้มงวด ให้เหมือน tsconfig.app.json
+    // (ต้องตั้งแยกแต่ละไฟล์ เพราะไม่ได้ inherit จากกัน)
+    "strict": true,
   },
   "include": ["vite.config.ts"]
 }

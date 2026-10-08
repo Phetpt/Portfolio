@@ -20,7 +20,16 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    // เปิดการตรวจ type แบบเข้มงวด (noImplicitAny, strictNullChecks ฯลฯ)
+    "strict": true,
+
+    // ให้ TypeScript รู้จัก alias "@" ที่ตั้งไว้ใน vite.config.ts
+    // (ต้องตรงกับ resolve.alias ฝั่ง Vite เสมอ)
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
