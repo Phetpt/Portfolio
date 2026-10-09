@@ -1,5 +1,6 @@
 import { Hero } from "@/features/hero/Hero";
 import About from "@/features/about/About";
+import { Projects } from "@/features/projects/Projects";
 
 export function HomePage() {
   return (
@@ -9,6 +10,7 @@ export function HomePage() {
       className="min-h-screen bg-[#f9fafc] text-[#18181a]">
       <Hero/>
       <About/>
+      <Projects/>
     </main>
   );
 }
