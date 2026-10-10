@@ -1,2 +1,31 @@
 @import "tailwindcss";
 
+:root {
+  --page: #f9fafc;
+  --ink: #18181a;
+  --muted: #616367;
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+section[id] {
+  scroll-margin-top: 6rem;
+}
+a,
+button {
+  touch-action: manipulation;
+}
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}

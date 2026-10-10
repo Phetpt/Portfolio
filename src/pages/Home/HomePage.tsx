@@ -7,7 +7,7 @@ export function HomePage() {
     <main  
       id="main-content"
       tabIndex={-1}
-      className="min-h-screen bg-[#f9fafc] text-[#18181a]">
+      className="min-h-screen bg-page text-ink">
       <Hero/>
       <About/>
       <Projects/>
